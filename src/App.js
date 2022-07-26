@@ -15,6 +15,8 @@ import awsExports from './aws-exports';
 
 import { createLitCase as CreateLitCase } from './graphql/mutations'
 
+Amplify.configure(awsExports);
+
 const CLIENT_ID = uuid();
 
 const initialState = {
