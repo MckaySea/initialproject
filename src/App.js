@@ -41,7 +41,7 @@ class App extends React.Component {
     const { name, description, attorName, deadline, status, nextstep } = this.state
     if (name === '' || description === '' || attorName === '' || deadline === '' || status === '' || nextstep === '') return
 
-    const LitCase = { name, description, attorName, deadline, status, nextstep,  clientId: CLIENT_ID }
+    const LitCase = { name, description, attorName, deadline, status, nextstep,  clientID: CLIENT_ID }
     const LitCases = [...this.state.LitCases, LitCase]
     this.setState({
       LitCases,  name: '', description: '', attorName: '', deadline: '', status: '', nextstep: ''
